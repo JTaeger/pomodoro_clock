@@ -89,15 +89,15 @@ window = Tk()
 window.title("Pomodoro Clock")
 window.config(padx=100, pady=50, bg=YELLOW)
 
-canvas = Canvas(width=220, height=224, bg=YELLOW, highlightthickness=0)
+canvas = Canvas(width=220, height=230, bg=YELLOW, highlightthickness=0)
 tomato_img = PhotoImage(file="tomato.png")
-canvas.create_image(100, 112, image=tomato_img)
+canvas.create_image(100, 133, image=tomato_img)
 count_text = canvas.create_text(
     100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold")
 )
 canvas.grid(column=1, row=1)
 
-name_label = Label(text="Timer", fg=GREEN, font=(FONT_NAME, 30), bg=YELLOW)
+name_label = Label(text="Timer", fg=GREEN, font=(FONT_NAME, 35), bg=YELLOW)
 name_label.grid(column=1, row=0)
 
 check_label = Label(text="", fg=GREEN, font=(FONT_NAME, 30), bg=YELLOW)
